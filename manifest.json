@@ -10,12 +10,10 @@
     "128": "icons/icon128.png"
   },
   "permissions": [
-    "webRequest",
     "scripting",
     "declarativeNetRequestWithHostAccess",
     "webNavigation",
-    "tabs",
-    "storage"
+    "tabs"
   ],
   "host_permissions": [
     "*://*/*"
