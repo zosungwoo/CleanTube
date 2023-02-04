@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "CleanTube - Watch only what you need",
-  "description": "Watch only what you need and never waste time on irrelevant content",
+  "name": "CleanTube - Watch only needed",
+  "description": "Watch only needed in Youtube. Don't waste time on irrelevant content",
   "version": "1.0",
   "icons": {
     "16": "icons/icon16.png",
