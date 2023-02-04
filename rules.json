@@ -1,0 +1,13 @@
+[
+	{
+    	"id": 1,
+    	"priority": 1,
+        "condition": {
+            "urlFilter": "https://www.youtube.com/|", "resourceTypes": ["main_frame"]
+         },
+        "action": {
+        	"type": "redirect",
+        	"redirect": { "url": "https://www.youtube.com/feed/subscriptions" }
+        }
+	}
+]
