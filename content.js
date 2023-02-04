@@ -21,25 +21,32 @@ function removeElements() {
     else {
         var guideSection = Array.from(document.getElementsByTagName("ytd-guide-section-renderer"));
         if(guideSection.length == 5){
-            // Home, Shorts, ...
-            var guideEntry = Array.from(document.getElementsByTagName("ytd-guide-entry-renderer"));
-            
-            var idx = [0,1,3];
-            for (var i = 0; i < idx.length; i++)
-              guideEntry[idx[i]].parentNode.removeChild(guideEntry[idx[i]]);
 
-            // Trend, ...
-            var idx = [1,2,3];
-            for (var i = 0; i < idx.length; i++)
-              guideSection[idx[i]].parentNode.removeChild(guideSection[idx[i]]);
+            guideSection[2].parentNode.removeChild(guideSection[2]);  // 'Explore' section
+            guideSection[3].parentNode.removeChild(guideSection[3]);  // 'More from YouTube' section
+
+            
+            guideEntry = Array.from(guideSection[0].getElementsByTagName("ytd-guide-entry-renderer"));
+
+            guideEntry[0].parentNode.removeChild(guideEntry[0]);  // 'Home' Entry
+            guideEntry[1].parentNode.removeChild(guideEntry[1]);  // 'Shorts' Entry
+            // Youtube Premium user
+            if(guideEntry[3].getElementsByTagName("a")[0].title == "Originals"){
+                guideEntry[3].parentNode.removeChild(guideEntry[3]);  // 'Originals' Entry
+            }
+
         }
 
-        // Home, Shorts, ... when the Chrome window is resized to be small(responsive web)
+        // When the Chrome window is resized to be small(responsive web)
         var miniGuideEntry = Array.from(document.getElementsByTagName("ytd-mini-guide-entry-renderer"));
-        if(miniGuideEntry.length == 7){
-            var idx = [0,1,3];
-            for (var i = 0; i < idx.length; i++)
-              miniGuideEntry[idx[i]].parentNode.removeChild(miniGuideEntry[idx[i]]);
+        
+        if(miniGuideEntry.length != 0 && miniGuideEntry[0].getAttribute("aria-label") == "Home") {
+            miniGuideEntry[0].parentNode.removeChild(miniGuideEntry[0]);  // 'Home' Entry
+            miniGuideEntry[1].parentNode.removeChild(miniGuideEntry[1]);  // 'Shorts' Entry
+            // Youtube Premium user
+            if(miniGuideEntry.length == 7){
+                miniGuideEntry[3].parentNode.removeChild(miniGuideEntry[3]);  // 'Originals' Entry
+            }
         }
 
         // Display only one Shorts when watching Shorts
@@ -47,7 +54,7 @@ function removeElements() {
         {
             var shortsVideos = Array.from(document.getElementsByTagName("ytd-reel-video-renderer"));
             var numShorts = shortsVideos.length;
-            if(numShorts == 10)
+            if(numShorts > 1)
                 for (var i = 1; i < numShorts; i++)
                   shortsVideos[i].parentNode.removeChild(shortsVideos[i]);
         }
