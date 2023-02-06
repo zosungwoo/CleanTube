@@ -8,6 +8,9 @@
   
 </div>
 
+<h3> CleanTube</h3>
+
+
 - Redirect to 'subscriptions page' when accessing Youtube
 - Remove menus (Home, Subscriptions, Trending, etc..) - Support for YouTube Premium Account
 - Remove recommended videos on the right side when watching a video
