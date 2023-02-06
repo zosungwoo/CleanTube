@@ -7,3 +7,8 @@
   [Chrome Web Store](https://chrome.google.com/webstore/detail/cleantube-watch-only-need/ffalnkpnbohljeiehcghmpdoljajbanj)
   
 </div>
+
+- Redirect to 'subscriptions page' when accessing Youtube
+- Remove menus (Home, Subscriptions, Trending, etc..) - Support for YouTube Premium Account
+- Remove recommended videos on the right side when watching a video
+- Remove other Shorts when watching s Shorts
