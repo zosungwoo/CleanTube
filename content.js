@@ -13,20 +13,9 @@ function removeElements() {
 
     // Remove recommended videos when watching a video
     if (window.location.href.startsWith("https://www.youtube.com/watch")) {
-        var recommend = document.getElementById("secondary-inner");
-        if(recommend) {
-            playlist = recommend.getElementsByTagName("ytd-playlist-panel-video-renderer");
-            // If there's a playlist
-            if(playlist.length > 0) {
-                recommend = document.getElementById("related");
-                if(recommend)
-                    recommend.parentNode.removeChild(recommend);
-            }
-            else{
+            var recommend = document.getElementById("related");
+            if(recommend)
                 recommend.parentNode.removeChild(recommend);
-            }
-
-        }
     }
     // Remove bad elements(Home, Shorts, Trending, etc.) in feed/playlist/... pages
     else {
