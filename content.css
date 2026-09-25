@@ -1,0 +1,12 @@
+/* Hide rather than delete nodes that YouTube's renderer owns. */
+[data-cleantube-hidden] {
+  display: none !important;
+}
+
+/* Keep the playlist, chat, transcript, player, and Premium controls intact. */
+ytd-watch-flexy #related:not(:has(ytd-playlist-panel-renderer)),
+ytd-watch-flexy ytd-watch-next-secondary-results-renderer,
+ytd-watch-flexy .ytp-endscreen-content,
+ytd-watch-flexy .ytp-ce-element {
+  display: none !important;
+}

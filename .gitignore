@@ -1,0 +1,5 @@
+node_modules/
+dist/
+_metadata/
+work/
+.DS_Store
