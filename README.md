@@ -29,7 +29,7 @@ npm test
 npm run package
 ```
 
-In `chrome://extensions`, enable Developer mode and load this directory as an unpacked extension. Reload the extension and the YouTube tab after making changes. The upload artifact is `dist/cleantube-1.1.0.zip`. The packaging allowlist excludes tests, dependencies, screenshots and Chrome-generated `_metadata`.
+In `chrome://extensions`, enable Developer mode and load this directory as an unpacked extension. Reload the extension and the YouTube tab after making changes. The upload artifact is `dist/cleantube-1.1.1.zip`. The packaging allowlist excludes tests, dependencies, screenshots and Chrome-generated `_metadata`.
 
 ### Privacy and permissions
 

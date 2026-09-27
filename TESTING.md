@@ -32,3 +32,14 @@ Premium menu variations are simulated; paid-account playback/download behavior h
 - Compact guide at a 1000×800 viewport: Home and Shorts are `display: none`; Subscriptions and You remain `display: block`. Viewport override reset after testing.
 - Clicking a real subscription Short navigates to `/watch?v=<the same video ID>` and plays in the normal player.
 - No extension load error was reported by `chrome://extensions`.
+
+# Validation for 1.1.1
+
+On 2026-09-27, reproduced the reported recommendation cards on a real ended YouTube video. The player had `ended-mode ytp-fullscreen-grid-active`; the legacy `.ytp-endscreen-content` was already hidden, while `.ytp-fullscreen-grid` was visible.
+
+After reloading the unpacked extension as 1.1.1 and the same video:
+
+- Played the last 10% to completion and confirmed the player reached `ended-mode` at 1:19 / 1:19.
+- The new recommendation grid had `display: none`; no recommendation links appeared in the player accessibility tree.
+- The playback controls remained present. Clicking the player replay control restarted the video at 0:00.
+- All 10 regression tests passed. The new regression failed against 1.1.0 and passed after the CSS fix.

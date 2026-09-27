@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 — 2026-09-27
+
+- Hide the modern fullscreen recommendation grid shown after playback ends, in addition to the legacy end screen.
+- Preserve replay, timeline, volume, and fullscreen controls.
+- Add a regression test for the modern ended-player layout.
+
 ## 1.1.0 — 2026-09-26
 
 - Update navigation handling for current YouTube layouts, including href-less Shorts entries and reordered sections.

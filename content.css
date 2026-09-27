@@ -10,3 +10,9 @@ ytd-watch-flexy .ytp-endscreen-content,
 ytd-watch-flexy .ytp-ce-element {
   display: none !important;
 }
+
+/* Modern YouTube renders its post-playback recommendations outside the legacy
+   .ytp-endscreen-content tree. Target the grid, not the player or its controls. */
+.html5-video-player .ytp-fullscreen-grid {
+  display: none !important;
+}

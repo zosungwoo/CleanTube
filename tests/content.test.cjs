@@ -121,3 +121,10 @@ test('menu order and extra sections cannot remove personal links or leave discov
     f.dom.window.close();
   }
 });
+
+test('modern fullscreen end grid is hidden while replay and player controls remain visible', () => {
+  const f = setup('<ytd-watch-flexy><div class="html5-video-player ended-mode ytp-fullscreen-grid-active"><video id="endedVideo"></video><div class="ytp-fullscreen-grid" id="endGrid"><div class="ytp-fullscreen-grid-main-content"><a class="ytp-modern-videowall-still">Recommendation</a></div></div><div class="ytp-chrome-bottom" id="controls"><button class="ytp-play-button" id="replay">Replay</button><div class="ytp-progress-bar" id="progress"></div></div></div></ytd-watch-flexy>', '/watch?v=test');
+  assert.equal(f.dom.window.getComputedStyle(f.node('endGrid')).display, 'none');
+  for (const id of ['endedVideo', 'controls', 'replay', 'progress']) assert.notEqual(f.dom.window.getComputedStyle(f.node(id)).display, 'none', id);
+  f.dom.window.close();
+});
