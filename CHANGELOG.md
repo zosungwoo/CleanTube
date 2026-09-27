@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 — 2026-09-27
+
+- Rename to CleanTube – Distraction-Free YouTube and clarify the summary and store descriptions.
+- Localize the name, summary, popup and store descriptions in six languages.
+- Include locale catalogs in the store package.
+
 ## 1.1.1 — 2026-09-27
 
 - Hide the modern fullscreen recommendation grid shown after playback ends, in addition to the legacy end screen.

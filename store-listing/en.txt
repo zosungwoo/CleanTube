@@ -1,0 +1,13 @@
+Watch what you came for. CleanTube clears away distractions on desktop YouTube so you can focus on the videos you choose.
+
+• Start with your subscriptions: opening YouTube Home or clicking the YouTube logo takes you to Subscriptions.
+• Simplify the sidebar: hide Home, Shorts, Explore, and More from YouTube while keeping your subscriptions, channels, history, playlists, Watch Later, liked videos, and downloads accessible.
+• Watch with fewer distractions: hide watch-page recommendations and video suggestions shown when playback ends. The player, replay controls, playlists, comments, and live chat remain available.
+• Open individual Shorts in the regular video player, without the endless Shorts feed.
+
+Search and direct video links remain available. Signing in to YouTube is recommended for Subscriptions. CleanTube does not limit all videos to subscribed channels, disable autoplay, block ads, or unlock YouTube Premium features.
+
+Privacy: CleanTube works only on YouTube. It does not collect or transmit user data.
+
+Source code and support:
+https://github.com/zosungwoo/CleanTube

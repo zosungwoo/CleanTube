@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://user-images.githubusercontent.com/30895117/216979319-2b2c8f9f-060c-44bb-baad-0f5655840c94.png" alt="CleanTube" width="450"/>
-  <h2>Watch only what you need on YouTube</h2>
+  <h2>Distraction-Free YouTube</h2>
 
   [Chrome Web Store](https://chromewebstore.google.com/detail/cleantube-watch-only-need/ffalnkpnbohljeiehcghmpdoljajbanj)
 </div>
@@ -29,10 +29,14 @@ npm test
 npm run package
 ```
 
-In `chrome://extensions`, enable Developer mode and load this directory as an unpacked extension. Reload the extension and the YouTube tab after making changes. The upload artifact is `dist/cleantube-1.1.1.zip`. The packaging allowlist excludes tests, dependencies, screenshots and Chrome-generated `_metadata`.
+In `chrome://extensions`, enable Developer mode and load this directory as an unpacked extension. Reload the extension and the YouTube tab after making changes. The upload artifact is `dist/cleantube-1.2.0.zip`. The packaging allowlist excludes tests, dependencies, screenshots and Chrome-generated `_metadata`.
 
 ### Privacy and permissions
 
 The extension runs only on `https://www.youtube.com/*` and `https://youtube.com/*`. `declarativeNetRequestWithHostAccess` redirects top-level Home requests to Subscriptions. A declarative content script handles YouTube's in-page navigation and interface changes. There is no background service worker, analytics, remote code, external API, or collection/transmission of user data.
 
 See [CHANGELOG.md](CHANGELOG.md) for releases and [TESTING.md](TESTING.md) for validation details.
+
+### Languages
+
+The extension name, summary and popup support English, Korean, Japanese, Simplified Chinese, Traditional Chinese and Spanish. English is the fallback. Store descriptions are maintained in `store-listing/` and entered separately in the Chrome Web Store dashboard.

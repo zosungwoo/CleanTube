@@ -1,0 +1,13 @@
+Mira lo que venías a ver. CleanTube oculta las distracciones de YouTube en el ordenador para que puedas concentrarte en los vídeos que eliges.
+
+• Empieza por tus suscripciones: al abrir Inicio o hacer clic en el logotipo de YouTube, irás a Suscripciones.
+• Simplifica el menú lateral: oculta Inicio, Shorts, Explorar y Más de YouTube. Tus suscripciones, canales, historial, listas de reproducción, Ver más tarde, vídeos que te gustan y descargas siguen disponibles.
+• Mira con menos distracciones: oculta las recomendaciones de la página de visualización y las sugerencias que aparecen al terminar un vídeo. Conserva el reproductor, los controles para volver a reproducir, las listas, los comentarios y el chat en directo.
+• Abre cada Short en el reproductor habitual, sin entrar en el feed infinito de Shorts.
+
+Puedes seguir buscando vídeos y abriéndolos mediante enlaces directos. Se recomienda iniciar sesión en YouTube para usar Suscripciones. CleanTube no limita todos los vídeos a los canales suscritos, no desactiva la reproducción automática, no bloquea anuncios ni desbloquea funciones de pago de YouTube Premium.
+
+Privacidad: CleanTube solo funciona en YouTube y no recopila ni transmite datos de los usuarios.
+
+Código fuente y ayuda:
+https://github.com/zosungwoo/CleanTube

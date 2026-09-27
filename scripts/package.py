@@ -7,6 +7,7 @@ root = Path(__file__).resolve().parent.parent
 manifest = json.loads((root / 'manifest.json').read_text())
 files = ['manifest.json', 'content.js', 'content.css', 'rules.json', 'popup.html', 'popup.js']
 files += sorted(set(manifest['icons'].values()))
+files += sorted(str(path.relative_to(root)) for path in (root / '_locales').glob('*/messages.json'))
 out = root / 'dist' / f"cleantube-{manifest['version']}.zip"
 out.parent.mkdir(exist_ok=True)
 with ZipFile(out, 'w', ZIP_DEFLATED) as archive:
